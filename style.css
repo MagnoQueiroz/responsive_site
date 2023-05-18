@@ -72,6 +72,12 @@ body {
   line-height: 32px;
   text-decoration: none;
   color: #090039;
+  transition: .7s;
+}
+
+#container main.content .text-c a:hover {
+  font-weight: 700;
+  color: #0a0044;
 }
 
 #container main.content .count {
