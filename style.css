@@ -113,7 +113,8 @@ body {
 }
 
 footer {
-
+  margin-left: 40px;
+  margin-top: 100px;
   font-family: 'Epilogue';
   font-weight: 800;
   display: inline-block;
