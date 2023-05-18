@@ -70,31 +70,32 @@ body {
 
 #container main.content .count {
   margin-top: 4.8rem;
-
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  gap: 32px;
 }
 
-#container main.content .count h4 {
-  max-width: 450px;
+#container main.content .count ul{
+    font-family: "Epilogue";
 
+  list-style-type: none;
+  max-width: 450px;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+#container main.content .count ul li {
   display: flex;
   align-items: center;
-  text-align: left;
-  gap: 66px;
+  justify-content: left;
+  gap: 50px;
 
-  font-family: "Epilogue";
   font-size: 24px;
   font-weight: 700;
 }
 
 #container main.content .count b {
 
-  font-family: "Epilogue";
-  font-style: normal;
   font-weight: 800;
   font-size: 72px;
   line-height: 80px;
