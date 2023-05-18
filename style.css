@@ -67,9 +67,10 @@ body {
   text-align: justify;
   color: #090039;
 }
+
 #container main.content .text-c a {
   font-size: 16px;
-  line-height: 32px;
+  width: 20%;
   text-decoration: none;
   color: #090039;
   transition: .9s;
@@ -143,6 +144,10 @@ footer {
   #container main.content {
     margin: 0 23px 77px;
     display: block;
+  }
+  #container main.content .text-c a {
+    width: 30%;
+
   }
 
   #container main.content .text-c h1 {
