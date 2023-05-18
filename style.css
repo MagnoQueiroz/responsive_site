@@ -73,11 +73,10 @@ body {
   width: 20%;
   text-decoration: none;
   color: #090039;
-  transition: .9s;
+  transition: 0.9s;
 }
 
 #container main.content .text-c a:hover {
-
   font-weight: 700;
   color: #0a0044;
 }
@@ -114,17 +113,94 @@ body {
   line-height: 80px;
 }
 
+section.email {
+  max-width: 1021px;
+
+  margin: 0 135px;
+  padding: 0;
+}
+
+section.email form {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+section.email form fieldset {
+  border: none;
+  font-family: "Epilogue";
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-self: space-between;
+  gap: 10px;
+}
+
+section.email form fieldset legend {
+  text-align: left !important;
+  color: #090039;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+section.email form fieldset label {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+
+section.email form fieldset label input {
+  width: 85%;
+
+  border: 1px solid #a8a8b3;
+  border-radius: 8px;
+
+  padding: 13px 12px 13px 16px;
+  background-color: #ffffff;
+}
+
+section.email form fieldset label textarea {
+  resize: none;
+
+  padding: 13px 12px 13px 16px;
+
+  width: 85%;
+  border: 1px solid #a8a8b3;
+  border-radius: 8px;
+}
+section.email form .button {
+  display: block;
+  /* position: absolute;
+  left: 30%; */
+}
+
+section.email form .button button {
+  border-radius: 4px;
+  margin-top: 20px;
+  border: 0;
+  background: #5341ad;
+  color: #0a0039;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 80px;
+  gap: 6px;
+  align-items: center;
+}
+
 footer {
-  position: fixed;
-  bottom: 0px;
+  position: absolute;
   right: 50px;
-  margin: 40px 0;
-  font-family: 'Epilogue';
+  /* left: -2%; */
+
+  margin-top: 30px;
+  font-family: "Epilogue";
   font-weight: 800;
   display: inline-block;
   width: 100%;
   text-align: center;
-  color:#090039 ;
+  color: #090039;
 }
 
 @media (max-width: 768px) {
@@ -147,7 +223,6 @@ footer {
   }
   #container main.content .text-c a {
     width: 30%;
-
   }
 
   #container main.content .text-c h1 {
@@ -159,9 +234,37 @@ footer {
     text-align: left;
     line-height: 32px;
   }
+
+  section.email {
+    max-width: 1021px;
+    margin: 0 23px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  section.email form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  section.email form fieldset label input {
+    width: 100%;
+  }
+  section.email form fieldset label textarea {
+    width: 100%;
+  }
+
+  section.email form .button button {
+    padding: 10px 100px;
+
+
+  }
   footer {
     position: static;
     font-size: 14px;
   }
-
 }
