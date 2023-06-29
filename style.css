@@ -43,23 +43,24 @@ main.content .text-c p {
 main.content .text-c a {
   text-decoration: none;
   font-size: 1.6rem;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   line-height: 3.2rem;
   color: #090039;
   display: inline-block;
-  margin: 3.2rem 0 7.2rem;
+  margin-top: 3.2rem;
 }
 
-main.content  text-c a:hover {
+main.content .text-c a:hover {
   font-weight: 700;
   color: #2f227c;
 }
 
 main.content .details ul {
+  margin-top: 7.2rem;
   list-style: none;
 }
 ul li {
-  width: 25.7rem;
+  max-width: 25.7rem;
 
   display: flex;
   align-items: flex-start;
@@ -67,13 +68,13 @@ ul li {
   color: #090039;
 
   font-size: 2.4rem;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-weight: 700;
-  line-height: 3.2rem
+  line-height: 3.2rem;
 }
 ul li span {
   font-size: 7.2rem;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   font-weight: 800;
   line-height: 8rem;
   letter-spacing: -2px;
@@ -82,4 +83,39 @@ ul li span {
 footer {
   width: 100%;
   text-align: center;
+  font-family: "Epilogue";
+  font-weight: 800;
+  color: #0f025c;
+  position: absolute;
+
+  font-size: 1.5rem;
+}
+
+footer {
+  display: inline-block;
+  text-align: center;
+}
+
+@media (min-width: 760px) {
+  #container {
+    max-width: 1021px;
+    margin: 0;
+    padding: 8rem 13.5rem 10.8rem;
+  }
+  main.content {
+    display: flex;
+    align-items: center;
+    gap: 11.6rem;
+  }
+  main.content .text-c {
+    max-width: 484px;
+  }
+  main.content .details ul li {
+    align-items: center;
+    gap: 5 0.3rem;
+    max-width: 450px;
+  }
+  ul li + li {
+    margin-top: 3.2rem;
+  }
 }
