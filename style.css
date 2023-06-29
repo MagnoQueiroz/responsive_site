@@ -1,270 +1,31 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: 0;
+
 }
 
-/* se as tags tiverem tamanhos diferente o auto vai centralizar o conteudo diferente entao colocar ela auto no container mesmo */
-body {
-  /* margin: auto; */
-
-  min-height: 100vh;
-  background-color: #ece9fd;
+:root {
+  /* 0.16 x 62.5 = 10px */
+  font-size: 62.5%
+  /* 100% =16px/100 = 0,16 ficaria mais difícil pra converter */
 }
-
 #container {
-  padding-top: 80px;
-  margin: 0 284px 108px 135px;
-  width: 100%;
-  max-width: 1021px;
+  max-width: 33.0rem;
+  margin: 0 auto;
+  padding: 60px 0 66px;
 }
 
-#container header span {
-  font-family: "Epilogue";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
+header span {
+  font-size: 1.6rem;
+  font-family: 'Epilogue', sans-serif;
+  line-height: 3.2rem;
+  letter-spacing: 3px; /*oq é isso??? acho q é espaço entre as letras*/
   color: #7158ef;
 }
 
-#container main.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 116px;
-}
-
-#container main.content .text-c {
-  max-width: 484px;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-  gap: 31px;
-
-  font-family: "Epilogue";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
-}
-
-#container main.content .text-c h1 {
-  text-align: left;
-
-  font-family: "Epilogue";
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 48px;
-  color: #090039;
-}
-
-#container main.content .text-c p {
-  text-align: justify;
-  color: #0a0039a3;
-}
-
-#container main.content .text-c span {
-  text-align: justify;
-  color: #090039;
-}
-
-#container main.content .text-c a {
-  font-size: 16px;
-  width: 20%;
-  text-decoration: none;
-  color: #090039;
-  transition: 0.9s;
-}
-
-#container main.content .text-c a:hover {
-  font-weight: 700;
-  color: #0a0044;
-}
-
-#container main.content .count {
-  margin-top: 4.8rem;
-}
-
-#container main.content .count ul {
-  font-family: "Epilogue";
-  color: #090039;
-  list-style-type: none;
-  max-width: 450px;
-  flex-direction: column;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  gap: 36px;
-}
-
-#container main.content .count ul li {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  gap: 50px;
-
-  font-size: 24px;
-  font-weight: 700;
-}
-
-#container main.content .count b {
-  font-weight: 800;
-  font-size: 72px;
-  line-height: 80px;
-}
-
-section.email {
-  max-width: 1021px;
-
-  margin: 0 135px;
-  padding: 0;
-}
-
-section.email form {
-  text-align: center;
-  margin-bottom: 60px;
-  position: relative;
-}
-
-section.email form fieldset {
-  border: none;
-  font-family: "Epilogue";
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-self: space-between;
-  gap: 10px;
-}
-
-section.email form fieldset legend {
-  text-align: left !important;
-  color: #090039;
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-section.email form fieldset label {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: center;
-}
-
-section.email form fieldset label input {
-  width: 85%;
-
-  border: 1px solid #a8a8b3;
-  border-radius: 8px;
-
-  padding: 13px 12px 13px 16px;
-  background-color: #ffffff;
-}
-
-section.email form fieldset label textarea {
-  resize: none;
-
-  padding: 13px 12px 13px 16px;
-
-  width: 85%;
-  border: 1px solid #a8a8b3;
-  border-radius: 8px;
-}
-section.email form .button {
-  display: block;
-  /* position: absolute;
-  left: 30%; */
-}
-
-section.email form .button button {
-  border-radius: 4px;
-  margin-top: 20px;
-  border: 0;
-  background: #5341ad;
-  color: #0a0039;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 80px;
-  gap: 6px;
-  align-items: center;
-}
-
 footer {
-  position: absolute;
-  right: 50px;
-  /* left: -2%; */
-
-  margin-top: 30px;
-  font-family: "Epilogue";
-  font-weight: 800;
-  display: inline-block;
   width: 100%;
   text-align: center;
-  color: #090039;
 }
 
-@media (max-width: 768px) {
-  #container {
-    padding-top: 60px;
-    /* padding-left: 23px;
-    padding-right: 23px; */
-    margin: 0 auto;
-    min-width: 329px;
-  }
-
-  #container header {
-    margin: 0 23px;
-    margin-bottom: 17px;
-  }
-
-  #container main.content {
-    margin: 0 23px 77px;
-    display: block;
-  }
-  #container main.content .text-c a {
-    width: 30%;
-  }
-
-  #container main.content .text-c h1 {
-    font-size: 40px;
-    line-height: 48px;
-  }
-
-  #container main.content .count ul {
-    text-align: left;
-    line-height: 32px;
-  }
-
-  section.email {
-    max-width: 1021px;
-    margin: 0 23px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-
-  section.email form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-
-  section.email form fieldset label input {
-    width: 100%;
-  }
-  section.email form fieldset label textarea {
-    width: 100%;
-  }
-
-  section.email form .button button {
-    padding: 10px 100px;
-
-
-  }
-  footer {
-    position: static;
-    font-size: 14px;
-  }
-}
