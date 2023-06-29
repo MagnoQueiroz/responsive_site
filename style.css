@@ -3,14 +3,17 @@
   padding: 0;
   box-sizing: 0;
 }
+
 body {
   background: #ece9fd;
 }
+
 :root {
   /* 0.16 x 62.5 = 10px */
   font-size: 62.5%;
   /* 100% =16px/100 = 0,16 ficaria mais difícil pra converter */
 }
+
 #container {
   max-width: 33rem;
   margin: 0 auto;
