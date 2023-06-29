@@ -2,30 +2,84 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
-
 }
-
+body {
+  background: #ece9fd;
+}
 :root {
   /* 0.16 x 62.5 = 10px */
-  font-size: 62.5%
+  font-size: 62.5%;
   /* 100% =16px/100 = 0,16 ficaria mais difícil pra converter */
 }
 #container {
-  max-width: 33.0rem;
+  max-width: 33rem;
   margin: 0 auto;
-  padding: 60px 0 66px;
+  padding: 60px 23px 66px;
 }
 
 header span {
   font-size: 1.6rem;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
   line-height: 3.2rem;
   letter-spacing: 3px; /*oq é isso??? acho q é espaço entre as letras*/
   color: #7158ef;
+}
+
+main.content .text-c h1 {
+  font-size: 4rem;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 800;
+  line-height: 4.8rem;
+  color: #090039;
+}
+
+main.content .text-c p {
+  font-size: 1.6rem;
+  font-family: "Epilogue", sans-serif;
+  line-height: 3.2rem;
+  color: #0a0039a3;
+}
+
+main.content .text-c a {
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: 'Epilogue', sans-serif;
+  line-height: 3.2rem;
+  color: #090039;
+  display: inline-block;
+  margin: 3.2rem 0 7.2rem;
+}
+
+main.content  text-c a:hover {
+  font-weight: 700;
+  color: #2f227c;
+}
+
+main.content .details ul {
+  list-style: none;
+}
+ul li {
+  width: 25.7rem;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 3.8rem;
+  color: #090039;
+
+  font-size: 2.4rem;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 700;
+  line-height: 3.2rem
+}
+ul li span {
+  font-size: 7.2rem;
+  font-family: 'Epilogue', sans-serif;
+  font-weight: 800;
+  line-height: 8rem;
+  letter-spacing: -2px;
 }
 
 footer {
   width: 100%;
   text-align: center;
 }
-
