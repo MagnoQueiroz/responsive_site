@@ -83,7 +83,7 @@ ul li span {
 section.email  {
 
   min-width: 32.0rem;
-  padding: 60px 23px 66px;
+  padding: 6.0rem 2.3rem 6.6rem;
 
 }
 
@@ -118,7 +118,7 @@ section.email form fieldset label input {
 section.email form fieldset label textarea {
   resize: none;
 
-  padding: 13px 12px 13px 16px;
+  padding: 1.3rem 1.2rem 1.3rem 1.6rem;
 
   width: 85%;
   border: 1px solid #a8a8b3;
@@ -133,13 +133,13 @@ section.email form .button {
 
 section.email form .button button {
   border-radius: 4px;
-  margin-top: 20px;
+  margin-top: 2.0rem;
   border: 0;
   background: #5341ad;
   color: #0a0039;
   display: flex;
   justify-content: space-between;
-  padding: 10px 80px;
+  padding: 1rem 8rem;
   gap: 6px;
   align-items: center;
 }
@@ -236,3 +236,6 @@ section.email form .button button {
 }
 
 
+/* usamos o max quando queremos que ele só va ate tal tamanho
+usamos min quando queremos que ele parta de um caminho
+*/
